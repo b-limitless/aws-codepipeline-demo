@@ -43,10 +43,12 @@ const Counter = () => {
     <div>
       <CounterValue data-testid="counter-value">Count: {counter}</CounterValue>
       <ButtonRow>
+        <h3>Count your number:</h3>
         <Button onClick={() => dispatch(-2)}>-2</Button>
         <Button onClick={() => dispatch(-1)}>-1</Button>
         <Button onClick={() => dispatch(1)}>+1</Button>
         <Button onClick={() => dispatch(2)}>+2</Button>
+        
       </ButtonRow>
     </div>
   );
